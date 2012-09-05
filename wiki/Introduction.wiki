@@ -1,3 +1,5 @@
+#Introduction to this project. Read this first!
+
 = UAlbertaBot Introduction =
 
 This is the home of UAlbertaBot, a competitor in the 2010, 2011 and 2012 [http://www.StarCraftAICompetition.com AIIDE StarCraft AI Competition]. 
