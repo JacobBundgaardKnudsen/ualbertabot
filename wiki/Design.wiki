@@ -1,0 +1,3 @@
+#summary Design & Structure of the bot
+
+= Design =
