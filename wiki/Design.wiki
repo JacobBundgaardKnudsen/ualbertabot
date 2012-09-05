@@ -1,3 +1,7 @@
 #summary Design & Structure of the bot
 
 = Design =
+
+Here is a rough call diagram for UAlbertaBot:
+
+http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
