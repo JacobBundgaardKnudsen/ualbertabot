@@ -1,13 +1,39 @@
-#summary One-sentence summary of this page.
+#summary How to Download, Compile & Run the bot
 
-= Introduction =
+= Prerequisites =
 
-Add your content here.
+UAlbertaBot is currently being maintained using Visual Studio 2012. Any version of Visual Studio can be used to compile the source, however the only VS Project files I will be actively maintaining are in VS 2012.
 
+List of Prerequisites for Bot:
+  * [http://www.microsoft.com/visualstudio/11/en-us Visual Studio 2012] (any version)
+  * [http://code.google.com/p/bwapi/ BWAPI 3.7.4] (or higher)
+  * [http://www.boost.org/ BOOST 1.47.0] (or higher)
 
-= Details =
+The UAlbertaBot project files use Windows Environment Variables to point to their required libraries.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+List of Required Windows System Environment Variables:
+  * BWAPI_DIR - BWAPI root directory
+  * BOOST_DIR - BOOST root directory
+
+= Download =
+
+To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
+
+= Compile=
+
+To compile the bot:
+  # Open UAlbertaBot/vs2011/UAlbertaBot.sln in VS 2012
+  # Select Release or Debug mode 
+  # Ensure that the "Platform Toolset" for all projects is set to "v90"
+  # Ensure [http://code.google.com/p/ualbertabot/source/browse/trunk/AdversarialSearch/source/Common.h#12 OPENGL_VIS] is not defined. This #define is used to launch our OpenGL visualization tool and is not supported at this time.
+  # Build "AdversarialSearch" project
+  # Build "StarcraftBuildOrderSearch" project
+  # Build "UAlbertaBot" project
+
+= Run =
+
+To run the bot:
+  # Install BWAPI tools and libraries
+  # Run Chaoslauncher.exe (obtained from BWAPI project)
+  # Modify Chaoslauncher config to point to compiled UAlbertaBot.dll
+  # Run StarCraft using Chaoslauncher
