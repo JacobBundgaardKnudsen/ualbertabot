@@ -30,7 +30,7 @@ To download the bot source code, click [https://code.google.com/p/ualbertabot/so
 To compile the bot:
   # Open UAlbertaBot/vs2011/UAlbertaBot.sln in VS 2012
   # Select Release or Debug mode 
-  # Ensure that the "Platform Toolset" for all projects is set to "v90"
+  # Ensure that the "Configuration Properties" > "General" > "Platform Toolset" for all projects is set to "v90"
   # Ensure [http://code.google.com/p/ualbertabot/source/browse/trunk/AdversarialSearch/source/Common.h#12 OPENGL_VIS] is not defined. This #define is used to launch our OpenGL visualization tool and is not supported at this time.
   # Build "AdversarialSearch" project
   # Build "StarcraftBuildOrderSearch" project
