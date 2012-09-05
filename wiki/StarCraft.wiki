@@ -1,0 +1,7 @@
+#summary Where to get StarCraft
+
+= StarCraft: Broodwar =
+
+Running any BWAPI project requires StarCraft: Broodwar. You must have the retail version of this game as pirated versions are not officially supported and may cause problems with BWAPI.
+
+You can obtain a digital version on the [http://us.battle.net/en/games/classic battle.net website].
