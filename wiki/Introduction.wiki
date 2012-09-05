@@ -1,4 +1,4 @@
-#Introduction to this project. Read this first!
+#summary Introduction to UAlbertaBot. Read this first!
 
 = UAlbertaBot Introduction =
 
