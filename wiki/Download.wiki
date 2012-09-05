@@ -11,7 +11,7 @@ List of Prerequisites for Bot:
 
 = Download =
 
-To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above.
+To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
 
 = Compile=
 
