@@ -6,6 +6,6 @@ Here is a rough call diagram for UAlbertaBot:
 
 http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
 
-== UAlbertaBotModule ==
+== [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/UAlbertaBotModule.cpp UAlbertaBotModule] ==
 
 Main .dll module of UAlbertaBot which inherits from AIModule. From this module we load various `Option`s and initialize the `GameCommander`. `UAlbertaBot.onFrame()` directly calls `GameCommander.update()`
