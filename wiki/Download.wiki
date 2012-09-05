@@ -9,7 +9,9 @@ List of Prerequisites for Bot:
   * [http://code.google.com/p/bwapi/ BWAPI 3.7.4] (or higher)
   * [http://www.boost.org/ BOOST 1.47.0] (or higher)
 
-List of Required System Environment Variables:
+The UAlbertaBot project files use Windows Environment Variables to point to their required libraries.
+
+List of Required Windows System Environment Variables:
   * BWAPI_DIR - BWAPI root directory
   * BOOST_DIR - BOOST root directory
 
@@ -29,4 +31,8 @@ To compile the bot:
 
 = Run =
 
-Instructions
+To run the bot:
+  # Install BWAPI tools and libraries
+  # Run Chaoslauncher.exe (obtained from BWAPI project)
+  # Modify Chaoslauncher config to point to compiled UAlbertaBot.dll
+  # Run StarCraft using Chaoslauncher
