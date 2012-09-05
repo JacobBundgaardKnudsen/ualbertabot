@@ -10,6 +10,9 @@ This is the home of UAlbertaBot, a competitor in the 2010, 2011 and 2012 [http:/
 
 == [Modify Bot How to Modify & Create Your Own Bot] ==
 
-== 2011 Tournament Highlight Reel ==
+
+
+
+=== 2011 Tournament Highlight Reel ===
 
 <wiki:video url="http://www.youtube.com/watch?v=xXsx1ma3_ko"/>
