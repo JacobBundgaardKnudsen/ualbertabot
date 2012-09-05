@@ -9,13 +9,23 @@ List of Prerequisites for Bot:
   * [http://code.google.com/p/bwapi/ BWAPI 3.7.4] (or higher)
   * [http://www.boost.org/ BOOST 1.47.0] (or higher)
 
+List of Required System Environment Variables:
+  * BWAPI_DIR - BWAPI root directory
+  * BOOST_DIR - BOOST root directory
+
 = Download =
 
 To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
 
 = Compile=
 
-Instructions
+To compile the bot:
+  # Open UAlbertaBot/vs2011/UAlbertaBot.sln in VS 2012
+  # Select Release or Debug mode 
+  # Ensure that the "Platform Toolset" for all projects is set to "v90"
+  # Build "AdversarialSearch" project
+  # Build "StarcraftBuildOrderSearch" project
+  # Build "UAlbertaBot" project
 
 = Run =
 
