@@ -11,11 +11,15 @@ List of Prerequisites for Bot:
 
 The UAlbertaBot project files use Windows Environment Variables to point to their required libraries.
 
-http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/environment.jpg
+http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/project.jpg
 
 List of Required Windows System Environment Variables:
   * BWAPI_DIR - BWAPI root directory
   * BOOST_DIR - BOOST root directory
+
+To edit these in Windows 7 right click "My Computer" > Properties > Advanced System Settings > Environment Variables:
+
+http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/environment.jpg
 
 = Download =
 
