@@ -8,4 +8,4 @@ http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
 
 == UAlbertaBotModule ==
 
-Main .dll module of UAlbertaBot which inherits from AIModule. From this module we load various `Option`s and initialize the `GameCommander`. `UAlbertaBot.onFrame()` directly calls GameCommander.update()`
+Main .dll module of UAlbertaBot which inherits from AIModule. From this module we load various `Option`s and initialize the `GameCommander`. `UAlbertaBot.onFrame()` directly calls `GameCommander.update()`
