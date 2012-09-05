@@ -8,3 +8,5 @@ This wiki will give an overview of the bot, including:
   * Design and structure
   * How to download and compile
   * How to modify to make your own bot
+
+<wiki:video url="http://www.youtube.com/watch?v=xXsx1ma3_ko"/>
