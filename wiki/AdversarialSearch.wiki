@@ -1,0 +1,3 @@
+#summary Information about the AdversarialSearch module
+
+Coming Soon
