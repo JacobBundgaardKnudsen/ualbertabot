@@ -1,0 +1,18 @@
+#summary How to Download, Compile & Run the bot
+
+= Prerequisites =
+
+Visual Studio
+
+= Download =
+
+Instructions
+
+= Compile=
+
+Instructions
+
+= Run =
+
+Instructions
+
