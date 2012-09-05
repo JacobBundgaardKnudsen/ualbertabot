@@ -1,7 +1,11 @@
 #summary Design & Structure of the bot
 
-= Design =
+= Design & Structure =
 
 Here is a rough call diagram for UAlbertaBot:
 
 http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
+
+== UAlbertaBotModule ==
+
+Main .dll module of UAlbertaBot which inherits from AIModule. From this module we load various `Option`s and initialize the `GameCommander`. `UAlbertaBot.onFrame()` directly calls GameCommander.update()`
