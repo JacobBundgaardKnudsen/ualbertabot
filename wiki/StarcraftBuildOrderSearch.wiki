@@ -2,4 +2,6 @@
 
 = StarcraftBuildOrderSearch =
 
-This folder contains the source code and VS project file for the implementation of our heuristic search based build order optimization. The details of this method are located in our AIIDE 2011 paper: [http://scholar.google.com/citations?view_op=view_citation&hl=en&user=teRseTgAAAAJ&citation_for_view=teRseTgAAAAJ:XiVPGOgt02cC Build-order Optimization in StarCraft].
+This folder contains the source code and VS project file for the implementation of our heuristic search based build order optimization. 
+
+The details of this method are located in our AIIDE 2011 paper: [http://scholar.google.com/citations?view_op=view_citation&hl=en&user=teRseTgAAAAJ&citation_for_view=teRseTgAAAAJ:XiVPGOgt02cC Build-order Optimization in StarCraft].
