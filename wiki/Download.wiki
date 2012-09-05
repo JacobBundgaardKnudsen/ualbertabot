@@ -11,7 +11,7 @@ List of Prerequisites for Bot:
 
 = Download =
 
-To download the bot source code, click [Source] above.
+To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above.
 
 = Compile=
 
