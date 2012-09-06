@@ -18,3 +18,5 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
   * Workers are allocated to resources by rule-based scripts using expert knowledge obtained from professional StarCraft players.
 == Race Selection ==
   * Currently UAlbertaBot only plays the Protoss race, however its architecture allows for any race to be played. The only limiting factor is a fix needed to the build order system which currently has a bug for the zerg race. In the future we hope to play random race.
+
+<wiki:video url="http://www.youtube.com/watch?v=LwWQy7MxT-Q" width=640 height=480/>
