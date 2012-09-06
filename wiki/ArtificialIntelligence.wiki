@@ -12,6 +12,8 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
 
 == Combat Scenario Decisions (Real-time Simulation) ==
   * All battles UAlbertaBot encounters are first run through our [AdversarialSearch combat simulation system]. If the outcome of this simulation is positive we continue toward the enmy base. If the outcome is negative, we retreat toward our own base.
+  * Details of the this method can be found in our 2012 AIIDE paper: [http://scholar.google.com/citations?view_op=view_citation&hl=en&user=teRseTgAAAAJ&citation_for_view=teRseTgAAAAJ:olpn-zPbct0C Fast Heuristic Search for RTS Game Combat Scenarios].
+
 
 <wiki:video url="http://www.youtube.com/watch?v=9441p6uTIVU" width=640 height=360/>
 
