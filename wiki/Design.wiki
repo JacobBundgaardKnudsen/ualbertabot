@@ -31,7 +31,7 @@ There are a few cases of global communication in UAlberaBot, which are implement
 
 == Artificial Intelligence ==
 
-UAlbertaBot contains a mix of dynamic artificial intelligence solutions and script-based decision making. Here I will give an overview of each main function of the bot and how it is performed.
+UAlbertaBot contains a mix of dynamic artificial intelligence systems and scripted rule-based decision making. Here I will give an overview of each main function of the bot and how it is performed.
 
   * === Build-order Planning (Search-Based AI) ===
     * All build-orders in UAlbertaBot are planned by our heuristic search based [StarcraftBuildOrderSearch build order planning system]. Build-order goals are given by `StrategyManager` to `ProductionManager` which then uses this system to dynamically generate near-optimal build order plans. The only two exceptions to this rule are:
