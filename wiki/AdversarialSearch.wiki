@@ -12,4 +12,4 @@ In UAlbertaBot, it is called by [https://code.google.com/p/ualbertabot/source/br
 
 Here is a video of the search code in action, see youtube video for description:
 
-<wiki:video url="http://www.youtube.com/watch?v=9441p6uTIVU"/>
+<wiki:video url="http://www.youtube.com/watch?v=9441p6uTIVU" width=640 height=360/>
