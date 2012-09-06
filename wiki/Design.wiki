@@ -1,6 +1,6 @@
 #summary Design & Structure of the bot
 
-= UAlbertaBot Architecture =
+= UAlbertaBot Design & Architecture =
 
 http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
 
