@@ -28,16 +28,3 @@ There are a few cases of global communication in UAlberaBot, which are implement
     * Performs efficient nearest-neighbour calculations as well as stores information relating to when an area of the map was last visited
   * `StrategyManager` 
     * Makes decisions about build-order goals, when to expand, and other game policies
-
-== [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/UAlbertaBotModule.cpp UAlbertaBotModule] ==
-
-  * Main .dll module of UAlbertaBot
-  * Inherits from AIModule 
-  * Loads `Option`s and initializes `GameCommander`
-  * `UAlbertaBot.onFrame()` directly calls `GameCommander.update()`
-
-== [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/Options.cpp Options] ==
-
-The Options namespace stores various parameters to be used throughout the code.
-
-== GameCommander ==
