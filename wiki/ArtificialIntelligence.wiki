@@ -17,7 +17,10 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
 == Multi-Unit Path Finding (Search-Based AI) ==
   * A flood-fill based multi-agent path finding system is used to determine all ground paths to a given destination on a given map. The results of these are cached efficiently for later re-use if necessary.
 == Strategy Selection (Learning AI) ==
-  * UAlbertaBot uses the UCB algorithm for selecting a strategy to use against a given opponent, based on the results of previous matches. If no match history is available, we use a random selection from given strategies.
+  * UAlbertaBot uses the UCB algorithm for selecting a strategy to use against a given opponent, based on the results of previous matches. If no match history is available, we use a random selection from given strategies. The following graph shows how UAlbertaBot's win rate went up over time as it learned which strategies to implement in the 2012 AIIDE StarCraft AI Competition:
+
+http://www.cs.ualberta.ca/~cdavid/win_percentage.png
+
 == Unit Micromanagement (Rule-Based) ==
   * Currently, all unit micromanagement follows a rule-based scripted policy found in its respective `MicroManager` subclass. We hope to soon extend this to use our full [AdversarialSearch alpha-beta based micro controller].
 == Worker-Resource Allocation (Rule-Based) ==
