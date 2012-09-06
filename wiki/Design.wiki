@@ -37,7 +37,7 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
     * All build-orders in UAlbertaBot are planned by our heuristic search based [StarcraftBuildOrderSearch build order planning system]. Build-order goals are given by `StrategyManager` to `ProductionManager` which then uses this system to dynamically generate near-optimal build order plans. The only two exceptions to this rule are:
       * A supply producer is build immediately if a supply defficiency is detected
       * A detector is made if enemy cloaked units are detected
-  * === Combat Simulation (Dynamic Simulation) ===
+  * === Combat Scenario Decisions (Real-time Simulation) ===
     * All battles UAlbertaBot encounters are first run through our [AdversarialSearch combat simulation system]. If the outcome of this simulation is positive we continue toward the enmy base. If the outcome is negative, we retreat toward our own base.
   * === Multi-Unit Path Finding (Search-Based AI) ===
     * A flood-fill based multi-agent path finding system is used to determine all ground paths to a given destination on a given map. The results of these are cached efficiently for later re-use if necessary.
