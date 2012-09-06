@@ -6,6 +6,7 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
   * All build-orders in UAlbertaBot are planned by our heuristic search based [StarcraftBuildOrderSearch build order planning system]. Build-order goals are given by `StrategyManager` to `ProductionManager` which then uses this system to dynamically generate near-optimal build order plans. The only two exceptions to this rule are:
     * A supply producer is build immediately if a supply defficiency is detected
     * A detector is made if enemy cloaked units are detected
+  * Details of this method can be found in our AIIDE 2011 paper: [http://scholar.google.com/citations?view_op=view_citation&hl=en&user=teRseTgAAAAJ&citation_for_view=teRseTgAAAAJ:XiVPGOgt02cC Build-order Optimization in StarCraft].
 
 <wiki:video url="http://www.youtube.com/watch?v=-8IycRLEBok" width=640 height=480/>
 
