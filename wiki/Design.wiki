@@ -4,14 +4,13 @@
 
 UAlbertaBot was designed to have an intuitive hierarchical structure based on proven military command systems. This structure is beneficial for several reasons:
   * Intuitive classes for ease of interpretation
-    * ex: 'ProductionManager' handles every task related to production of buildingd and units
+    * ex: `ProductionManager` handles every task related to production of buildingd and units
   * Modular design allows for easy modifications and updates over time
-    * ex: To change unit micro behaviour simply replace the 'MicroManager' sub-classes
+    * ex: To change unit micro behaviour simply replace the `MicroManager` sub-classes
   * Vertical communication reduces code complexity
-    * ex: Only CombatCommander can talk to Squad, passing it orders
+    * ex: Only `CombatCommander` can talk to `Squad`, passing it orders
   * Information is on a need-to-know basis, reducing data transfer between modules
-    * ex: Only WorkerManager knows which workers are assigned to which jobs
-
+    * ex: Only `WorkerManager` knows which workers are assigned to which jobs
   * Vertical structure avoids code duplication
  
 
