@@ -8,6 +8,9 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
     * A detector is made if enemy cloaked units are detected
 == Combat Scenario Decisions (Real-time Simulation) ==
   * All battles UAlbertaBot encounters are first run through our [AdversarialSearch combat simulation system]. If the outcome of this simulation is positive we continue toward the enmy base. If the outcome is negative, we retreat toward our own base.
+
+<wiki:video url="http://www.youtube.com/watch?v=9441p6uTIVU" width=640 height=360/>
+
 == Multi-Unit Path Finding (Search-Based AI) ==
   * A flood-fill based multi-agent path finding system is used to determine all ground paths to a given destination on a given map. The results of these are cached efficiently for later re-use if necessary.
 == Strategy Selection (Learning AI) ==
