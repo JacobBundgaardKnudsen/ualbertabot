@@ -2,13 +2,26 @@
 
 = Design & Structure =
 
-Here is a rough call diagram for UAlbertaBot:
+UAlbertaBot was designed to have an intuitive hierarchical structure based on proven military command systems. This structure is beneficial for several reasons:
+  * Intuitive classes for ease of interpretation. 
+  * Modular design allows for easy modifications and updates over time
+  * Vertical communication reduces code complexity
+  * Vertical structure avoids code duplication
+  * Information is on a need-to-know basis, reducing data transfer between modules
+
+
+Here is a rough outline for UAlbertaBot:
 
 http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
 
+
+
 == [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/UAlbertaBotModule.cpp UAlbertaBotModule] ==
 
-Main .dll module of UAlbertaBot which inherits from AIModule. From this module we load various `Option`s and initialize the `GameCommander`. `UAlbertaBot.onFrame()` directly calls `GameCommander.update()`
+  * Main .dll module of UAlbertaBot
+  * Inherits from AIModule 
+  * Loads `Option`s and initializes `GameCommander`
+  * `UAlbertaBot.onFrame()` directly calls `GameCommander.update()`
 
 == [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/Options.cpp Options] ==
 
