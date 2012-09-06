@@ -1,9 +1,10 @@
 #summary Design & Structure of the bot
 
-= Design & Structure =
+= UAlbertaBot Architecture =
 
 http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
 
+== Motivation ==
 
 UAlbertaBot was designed to have an intuitive hierarchical structure based on proven military command systems. This structure is beneficial for several reasons:
   * Intuitive classes for ease of interpretation
@@ -15,7 +16,14 @@ UAlbertaBot was designed to have an intuitive hierarchical structure based on pr
   * Information is on a need-to-know basis, reducing data transfer between modules
     * ex: Only `WorkerManager` knows which workers are assigned to which jobs
   * Vertical structure avoids code duplication
- 
+
+== Global Communication ==
+
+There are a few cases of global communication in UAlberaBot, which are implemented via `Singleton` classes. Computationally expensive tasks such as path finding and strategy logic are performed inside these classes, and the results are then made globally available. These classes are:
+  * `InformationManager` computes and stores important information about units which each other manager may want access to (ie: determine if opponent has a detector)
+  * `MapTools` performs ground-distance path finding and caches results for later retrieval
+  * `MapGrid` allows for efficient nearest-neighbour calculations as well as stores information relating to when an area of the map was last visited
+  * `StrategyManager` makes decisions about build-order goals, when to expand, and other game policies
 
 == [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/UAlbertaBotModule.cpp UAlbertaBotModule] ==
 
