@@ -33,14 +33,15 @@ There are a few cases of global communication in UAlberaBot, which are implement
 
 UAlbertaBot contains a mix of dynamic artificial intelligence solutions and script-based decision making. Here I will give an overview of each main function of the bot and how it is performed.
 
-  * ==== (AI) Build-order Planning ====
+  * === (AI) Build-order Planning ===
     * All build-orders in UAlbertaBot are planned by our heuristic search based [StarcraftBuildOrderSearch build order planning system]. Build-order goals are given by `StrategyManager` to `ProductionManager` which then uses this system to dynamically generate near-optimal build order plans. The only two exceptions to this rule are:
       * A supply producer is build immediately if a supply defficiency is detected
       * A detector is made if enemy cloaked units are detected
-  * (AI) Combat Simulation
+  * === (AI) Combat Simulation ===
     * All battles UAlbertaBot encounters are first run through our [AdversarialSearch combat simulation system]. If the outcome of this simulation is positive we continue toward the enmy base. If the outcome is negative, we retreat toward our own base.
-  * (AI) Multi-Unit Path Finding
+  * === (AI) Multi-Unit Path Finding ===
     * A flood-fill based multi-agent path finding system is used to determine all ground paths to a given destination on a given map. The results of these are cached efficiently for later re-use if necessary.
-  * (AI) Strategy Selection
+  * === (AI) Strategy Selection ===
     * UAlbertaBot uses the UCB algorithm for selecting a strategy to use against a given opponent, based on the results of previous matches. If no match history is available, we use a random selection from given strategies.
-    
+  * === (Script) Unit Micromanagement ===
+    * Currently, all unit micromanagement follows a rule-based scripted policy found in its respective `MicroManager` subclass. We hope to soon extend this to use our full [AdversarialSearch alpha-beta based micro controller].
