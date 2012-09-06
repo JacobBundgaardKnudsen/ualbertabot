@@ -8,4 +8,4 @@ The details of this method can be found in our AIIDE 2011 paper: [http://scholar
 
 All build-orders used by UAlbertaBot's [https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.cpp ProductionManager] are planned by this system. If you wish to implement custom build-orders, you must replace calls to this module by your own custom system.
 
-<wiki:video url="http://www.youtube.com/watch?v=-8IycRLEBok" width=640/>
+<wiki:video url="http://www.youtube.com/watch?v=-8IycRLEBok" width=640 height=480/>
