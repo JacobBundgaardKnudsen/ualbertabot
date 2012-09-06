@@ -20,7 +20,7 @@ UAlbertaBot was designed to have an intuitive hierarchical structure based on pr
 == Global Communication ==
 
 There are a few cases of global communication in UAlberaBot, which are implemented via `Singleton` classes. Computationally expensive tasks such as path finding and strategy logic are performed inside these classes, and the results are then made globally available. These classes are:
-  * `InformationManager` 
+  * `InformationManager`
     * Computes and stores important information about units which each other manager may want access to (ie: determine if opponent has a detector)
   * `MapTools`
     * Performs ground-distance path finding and caches results for later retrieval
