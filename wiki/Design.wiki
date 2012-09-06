@@ -2,6 +2,9 @@
 
 = Design & Structure =
 
+http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
+
+
 UAlbertaBot was designed to have an intuitive hierarchical structure based on proven military command systems. This structure is beneficial for several reasons:
   * Intuitive classes for ease of interpretation
     * ex: `ProductionManager` handles every task related to production of buildingd and units
@@ -13,12 +16,6 @@ UAlbertaBot was designed to have an intuitive hierarchical structure based on pr
     * ex: Only `WorkerManager` knows which workers are assigned to which jobs
   * Vertical structure avoids code duplication
  
-
-Here is a rough outline for UAlbertaBot:
-
-http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
-
-
 
 == [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/UAlbertaBotModule.cpp UAlbertaBotModule] ==
 
