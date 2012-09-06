@@ -47,3 +47,5 @@ UAlbertaBot contains a mix of dynamic artificial intelligence systems and script
     * Currently, all unit micromanagement follows a rule-based scripted policy found in its respective `MicroManager` subclass. We hope to soon extend this to use our full [AdversarialSearch alpha-beta based micro controller].
   * === Worker-Resource Allocation (Rule-Based) ===
     * Workers are allocated to resources by rule-based scripts using expert knowledge obtained from professional StarCraft players.
+  * === Race Selection ===
+    * Currently UAlbertaBot only plays the Protoss race, however its architecture allows for any race to be played. The only limiting factor is a fix needed to the build order system which currently has a bug for the zerg race. In the future we hope to play random race.
