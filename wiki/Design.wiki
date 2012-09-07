@@ -28,3 +28,5 @@ There are a few cases of global communication in UAlberaBot, which are implement
     * Performs efficient nearest-neighbour calculations as well as stores information relating to when an area of the map was last visited
   * `StrategyManager` 
     * Makes decisions about build-order goals, when to expand, and other game policies
+
+= Bot Design by Game Area =
