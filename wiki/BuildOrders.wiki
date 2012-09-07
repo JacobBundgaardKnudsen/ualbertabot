@@ -1,6 +1,6 @@
 #summary One-sentence summary of this page.
 
-= Build Orders =
+= Build Orders & Unit Production =
 
 Build orders in UAlbertaBot are handled by the `BuildOrderQueue`, which stores a priority-sorted queue of `BuildOrderItem` objects. 
 
