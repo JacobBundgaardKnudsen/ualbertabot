@@ -1,0 +1,26 @@
+#summary One-sentence summary of this page.
+
+= Build Orders =
+
+Build orders in UAlbertaBot are handled by the `BuildOrderQueue`, which stores a priority-sorted queue of `BuildOrderItem` objects. 
+
+{{{
+class BuildOrderItem 
+{
+   MetaType   metaType; 
+   int        priority;
+   bool       blocking; 
+};
+}}}
+
+A `BuildOrderItem` is essentially just a container which holds
+  * [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/MetaType.h MetaType] - A custom container for a BWAPI buildable types
+  * `int` - The priority of the item in the queue
+  * `bool` - Whether the object 'blocks' the next item in the build order. If an item is blocking, items with lower priority in the queue can be built until it is made. If an item is not blocking, the next item in the queue will be built if its resources are available before the that item.
+
+A [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/MetaType.h MetaType] object is a custom class which is able to store either of the three BWAPI buildable/trainable types. It holds either a `BWAPI::UnitType`, `BWAPI::TechType` or `BWAPI::UpgradeType`. It was created so that the `BuildOrderQueue` only needs to store a single object type. To create a `MetaType` simply call its constructor with one of the 3 listed types:
+
+{{{
+MetaType type(BWAPI::UnitTypes::Marine);
+MetaType type2(BWAPI::UpgradeTypes::Leg_Enhancements);
+}}}
