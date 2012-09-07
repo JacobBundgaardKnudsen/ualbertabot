@@ -55,6 +55,7 @@ This method takes an ordered vector of `MetaType` objects, clears the current `B
 
 {{{
 std::vector<MetaType> buildOrder;
+
 buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Probe));
 buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Probe));
 buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Pylon));
