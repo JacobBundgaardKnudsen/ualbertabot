@@ -86,4 +86,8 @@ For each of these events, a new build order goal is obtained via
 const MetaPairVector StrategyManager::getBuildOrderGoal()
 }}}
 
-If you wish to alter the build order goal strategy of UAlbertaBot, you simply need to modify that function. 
+If you wish to alter the build order goal strategy of UAlbertaBot, you simply need to modify that function. However if you want to alter UAlbertaBot to not use its automatic planning system, this must be done by rewriting your own planning system inside
+
+{{{
+void ProductionManager::testBuildOrderSearch(const std::vector< std::pair<MetaType, UnitCountType> > & goal)
+}}} 
