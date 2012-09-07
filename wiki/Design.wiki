@@ -30,3 +30,11 @@ There are a few cases of global communication in UAlberaBot, which are implement
     * Makes decisions about build-order goals, when to expand, and other game policies
 
 = Bot Design by Game Area =
+
+This section will describe the design of UAlbertaBot in relation to each major aspect of a real-time strategy game.
+
+== Build Orders & Building Production ==
+
+All unit production in UAlbertaBot is carried out by the `ProductionManager'. This includes managing build orders and constructing units and buildings. We will first discuss how build orders are carried out, followed by the implementation details of how units are constructed as the build order is carried out.
+
+==== Build Orders ===
