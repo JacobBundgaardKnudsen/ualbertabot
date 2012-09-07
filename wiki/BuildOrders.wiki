@@ -24,3 +24,43 @@ A [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/b
 MetaType type(BWAPI::UnitTypes::Marine);
 MetaType type2(BWAPI::UpgradeTypes::Leg_Enhancements);
 }}}
+
+`BuildOrderItem`s are then inserted into the `BuildOrderQueue` by calling one of the following:
+
+{{{
+void BuildOrderQueue::queueItem(BuildOrderItem<PRIORITY_TYPE> b);
+void BuildOrderQueue::queueAsHighestPriority(MetaType m, bool blocking);
+void BuildOrderQueue::queueAsLowestPriority(MetaType m, bool blocking);
+}}}
+
+If `queueItem` is called, its priority level must be set manually by the user. It is recommended to only use the highest / lowest priority insert methods.
+
+== Example Build Order ==
+
+As an example, let's say we want to build the following items in order:
+  # Protoss Probe
+  # Protoss Probe
+  # Protoss Pylon
+  # Protoss Probe
+  # Protoss Gateway
+  # Protoss Zealot
+
+You could insert each of these items into the `BuildOrderQueue` yourself from the `ProductionManager`, however a function already exists to do this job for you:
+
+{{{
+void ProductionManager::setBuildOrder(const std::vector<MetaType> & buildOrder);
+}}}
+
+This method takes an ordered vector of `MetaType` objects, clears the current `BuildOrderQueue` and inserts each type to be built in order. So  the safest and easiest way to set a custom build order is to call the following code somewhere within `ProductionManager`:
+
+{{{
+std::vector<MetaType> buildOrder;
+buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Probe));
+buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Probe));
+buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Pylon));
+buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Probe));
+buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Gateway));
+buildOrder.push_back(MetaType(BWAPI::UnitTypes::Protoss_Zealot));
+
+setBuildOrder(buildOrder);
+}}}
