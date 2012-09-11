@@ -4,7 +4,7 @@
 
 All unit production in UAlbertaBot is handled by `ProductionManager`. 
 
-Here is the control flow for `ProductionManager.update()` which is called ever frame:
+Here is the control flow for `ProductionManager.update()` which is called every frame:
 
   * if event occurs which triggers a new build order
     * clear current build order
