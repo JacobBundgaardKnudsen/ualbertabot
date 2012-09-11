@@ -2,7 +2,7 @@
 
 = Build Order Overview =
 
-All unit production in UAlbertaBot is handled by `ProductionManager`. 
+All unit production in UAlbertaBot is handled by https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.h ProductionManager]. 
 
 Here is the control flow for [https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.cpp#47 ProductionManager.update()] which is called every frame:
 
@@ -19,7 +19,7 @@ The events under which a new build order are triggered are listed below
 
 = Implementation =
 
-Build orders in UAlbertaBot are handled by the `BuildOrderQueue`, which stores a priority-sorted queue of `BuildOrderItem` objects. 
+Build orders in UAlbertaBot are handled by the [https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/BuildOrderQueue.h BuildOrderQueue], which stores a priority-sorted queue of `BuildOrderItem` objects. 
 
 {{{
 class BuildOrderItem 
