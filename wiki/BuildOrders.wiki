@@ -1,6 +1,23 @@
 #summary One-sentence summary of this page.
 
-= Build Orders =
+= Build Order Overview =
+
+All unit production in UAlbertaBot is handled by `ProductionManager`. 
+
+Here is the control flow for `ProductionManager.update()` which is called ever frame:
+
+  * if event occurs which triggers a new build order
+    * clear current build order
+    * get new build order goal from `StrategyManager`
+    * pass goal into `StarcraftBuildOrderSearch`
+    * set build order to the returned result
+  * if current build order contains items
+    * if the highest priority item can be built
+      * build the highest priority item
+
+The events under which a new build order are triggered are listed below
+
+= Implementation =
 
 Build orders in UAlbertaBot are handled by the `BuildOrderQueue`, which stores a priority-sorted queue of `BuildOrderItem` objects. 
 
