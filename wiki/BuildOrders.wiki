@@ -2,7 +2,7 @@
 
 = Build Order Overview =
 
-All unit production in UAlbertaBot is handled by https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.h ProductionManager]. 
+All unit production in UAlbertaBot is handled by [https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.h ProductionManager]. 
 
 Here is the control flow for [https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.cpp#47 ProductionManager.update()] which is called every frame:
 
