@@ -4,19 +4,6 @@
 
 http://webdocs.cs.ualberta.ca/~cdavid/ualbertabot.png
 
-== Motivation ==
-
-UAlbertaBot was designed to have an intuitive hierarchical structure based on proven military command systems. This structure is beneficial for several reasons:
-  * Intuitive classes for ease of interpretation
-    * ex: `ProductionManager` handles every task related to production of buildingd and units
-  * Modular design allows for easy modifications and updates over time
-    * ex: To change unit micro behaviour simply replace the `MicroManager` sub-classes
-  * Vertical communication reduces code complexity
-    * ex: Only `CombatCommander` can talk to `Squad`, passing it orders
-  * Information is on a need-to-know basis, reducing data transfer between modules
-    * ex: Only `WorkerManager` knows which workers are assigned to which jobs
-  * Vertical structure avoids code duplication
-
 == Logic Flow ==
 
 Here is the complete sequential logic flow of UAlbertaBot:
@@ -76,6 +63,20 @@ Here is the complete sequential logic flow of UAlbertaBot:
         * N/A - `MapTools` is only polled for path finding details
       * `StarcraftBuildOrderSearchManager.update()`
         * If a goal is given, perform search for a given time limit
+
+== Motivation ==
+
+UAlbertaBot was designed to have an intuitive hierarchical structure based on proven military command systems. This structure is beneficial for several reasons:
+  * Intuitive classes for ease of interpretation
+    * ex: `ProductionManager` handles every task related to production of buildingd and units
+  * Modular design allows for easy modifications and updates over time
+    * ex: To change unit micro behaviour simply replace the `MicroManager` sub-classes
+  * Vertical communication reduces code complexity
+    * ex: Only `CombatCommander` can talk to `Squad`, passing it orders
+  * Information is on a need-to-know basis, reducing data transfer between modules
+    * ex: Only `WorkerManager` knows which workers are assigned to which jobs
+  * Vertical structure avoids code duplication
+
 
 == Global Communication ==
 
