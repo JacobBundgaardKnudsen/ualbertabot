@@ -17,6 +17,17 @@ UAlbertaBot was designed to have an intuitive hierarchical structure based on pr
     * ex: Only `WorkerManager` knows which workers are assigned to which jobs
   * Vertical structure avoids code duplication
 
+== Logic Flow ==
+
+Here is the complete sequential logic flow of UAlbertaBot:
+
+  * `UAlbertaBot.onFrame()`
+    * `GameCommander.update()`
+      * `WorkerManager.update()`
+      * `ProductionManager.update()`
+      * `BuildingManager.update()`
+     
+
 == Global Communication ==
 
 There are a few cases of global communication in UAlberaBot, which are implemented via `Singleton` classes. Computationally expensive tasks such as path finding and strategy logic are performed inside these classes, and the results are then made globally available. These classes are:
