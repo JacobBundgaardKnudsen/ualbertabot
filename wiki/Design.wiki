@@ -73,7 +73,7 @@ Here is the complete sequential logic flow of UAlbertaBot:
       * `MapGrid.update()`
         * For each occupied grid space, update its time last visited
       * `MapTools.update()`
-        * N/A - MapTools is only polled for path finding details
+        * N/A - `MapTools` is only polled for path finding details
       * `StarcraftBuildOrderSearchManager.update()`
         * If a goal is given, perform search for a given time limit
 
