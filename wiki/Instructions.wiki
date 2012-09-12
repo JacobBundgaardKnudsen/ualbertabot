@@ -1,5 +1,9 @@
 #summary How to Download, Compile & Run the bot
 
+= Download =
+
+To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
+
 = Prerequisites =
 
 UAlbertaBot is currently being maintained using Visual Studio 2012. Any version of Visual Studio can be used to compile the source, however the only VS Project files I will be actively maintaining are in VS 2012.
@@ -20,10 +24,6 @@ List of Required Windows System Environment Variables:
 To edit these in Windows 7 right click "My Computer" > Properties > Advanced System Settings > Environment Variables:
 
 http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/environment.jpg
-
-= Download =
-
-To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
 
 = Compile=
 
