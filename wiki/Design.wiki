@@ -26,7 +26,12 @@ Here is the complete sequential logic flow of UAlbertaBot:
       * `WorkerManager.update()`
       * `ProductionManager.update()`
       * `BuildingManager.update()`
-     
+      * `CombatCommander.update()`
+      * `ScoutManager.update()`
+      * `InformationManager.update()`
+      * `MapGrid.update()`
+      * `MapTools.update()`
+      * `StarcraftBuildOrderSearchManager.update()`
 
 == Global Communication ==
 
