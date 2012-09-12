@@ -52,13 +52,12 @@ Here is the complete sequential logic flow of UAlbertaBot:
           * Otherwise, if we know where an enemy building was, attack it
           * Otherwise, explore until we find a new attack target
         * `Squads.update()` - perform squad commands
-          * If squad is combat squad
-            * Perform `CombatSimulation`
-              * If simulation returns victory
-                * Continue attacking toward current target
-                * Call associated `MicroManager` sub-class for each unit type
-              * If simulation returns defeat
-                * Retreat Squad toward own base
+          * Perform `CombatSimulation`
+            * If simulation returns victory
+              * Continue attacking toward current target
+              * Call associated `MicroManager` sub-class for each unit type
+            * If simulation returns defeat
+              * Retreat Squad toward own base
       * `ScoutManager.update()`
         * If we know where enemy base is
           * If we are outside enemy base, go toward it
