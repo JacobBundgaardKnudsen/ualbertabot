@@ -30,4 +30,4 @@ On each frame, `WorkerManager.update()` performs the following logic:
     * Allocate gas workers until 3 in each refinery
     * Move build workers to building location if necessary
 
-When a worker is trained, its status is initially set to `Default`.
+When a worker is trained, its status is initially set to `Default`. When the `update()` function is called and detects that the unit it Idle, it sets the unit to gather minerals at the closest known resource depot, up to a cap of 3 workers per mineral patch per resource depot. 
