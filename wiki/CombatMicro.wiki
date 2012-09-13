@@ -46,7 +46,7 @@ With a `SquadOrder` consisting of
 {{{
 class SquadOrder
 {
-    enum { None, Attack, Defend, Regroup, SquadOrderTypes };
+    enum { None, Attack, Defend };
 
     int                type;       // type of order, from enum above
     int                radius;     // the radius of action for this order
