@@ -64,3 +64,7 @@ This `Squad` has the intuitive meaning of "Take these two Zealots, Dragoon and O
 Any `Squad` formed and added to `SquadData` inside `CombatCommander` will have its `update()` method called each frame, and will carry out behaviours in this fashion. If you wish to add new behaviours you need to modify `SquadOrder` and the respective `MicroManager`s.
 
 By default, UAlbertaBot will only set one Attack squad and send it to attack the closest known enemy base. 
+
+= Unit Micro =
+
+Unit Micro in UAlbertaBot is handled by `MicroManager` and its sub-classes. `Squad.update()` calls `Squad.setManagerUnits()` which assigns each unit in the squad to a specific `MicroManager` sub-class. For generality, UAlbertaBot contains `MicroManager` sub-classes such as `MeleeManager` and `RangedManager` rather than perform micro specific to each `UnitType`. 
