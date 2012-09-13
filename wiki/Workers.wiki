@@ -17,3 +17,5 @@ enum WorkerJob {Minerals, Gas, Build, Combat, Idle, Repair, Move, Scout, Default
   * Move - Move to a building's construction location
   * Scout - Scouting the map
   * Default - Default constructor value
+
+All worker jobs are stored in a `std::map` inside `WorkerData`. You can get the status of a worker by calling `WorkerData`'s `getWorkerJob()` or `setWorkerJob()` methods.
