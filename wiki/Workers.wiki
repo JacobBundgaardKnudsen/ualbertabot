@@ -1,3 +1,19 @@
 #summary How to modify Worker jobs and resource allocation
 
 = Worker Jobs =
+
+Workers in UAlbertaBot can have one of the following job assignments:
+
+{{{
+enum WorkerJob {Minerals, Gas, Build, Combat, Idle, Repair, Move, Scout, Default};
+}}}
+
+  * Minerals - Mine minerals from a given mineral patch
+  * Gas - Gather gas from a given refinery
+  * Build - Build a building
+  * Combat - Help defend main base location
+  * Idle - No current assignment
+  * Repair - Repair a building
+  * Move - Move to a building's construction location
+  * Scout - Scouting the map
+  * Default - Default constructor value
