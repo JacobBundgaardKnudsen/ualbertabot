@@ -56,8 +56,8 @@ class SquadOrder
 
 === Example Squad ===
 
-  * `order = { Attack, 600, (200, 300) }
-  * `units = { Zealot, Zealot, Dragoon, Observer }
+  * `order = { Attack, 600, (200, 300) }`
+  * `units = { Zealot, Zealot, Dragoon, Observer }`
 
 This `Squad` has the intuitive meaning of "Take these two Zealots, Dragoon and Observer to Attack all enemy units within a radius of 600 of position (200, 300). The Zealots will have their behaviour controlled by `MeleeManager`, the Dragoons by `RangedManager`, and the `Observer` by `DetectorManager`.
 
