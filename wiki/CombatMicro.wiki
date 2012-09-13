@@ -20,6 +20,8 @@ Combat in UAlbertaBot is handled within `CombatCommander`:
         * If simulation returns defeat
           * Retreat Squad toward own base
 
+If you wish to change this logic or add your own, you simply need to modify `CombatCommander.update()` to do so.
+
 = Squad Formation & Implementation =
 
 In the above example we see that `Squad` objects are created. A `Squad` is an object which holds the following information:
