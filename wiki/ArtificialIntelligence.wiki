@@ -1,3 +1,5 @@
+#summary Artificial Intelligence techniques used in the bot
+
 = Artificial Intelligence =
 
 UAlbertaBot contains a mix of dynamic artificial intelligence systems and scripted rule-based decision making. Here I will give an overview of each main function of the bot and how it is performed.
