@@ -85,7 +85,7 @@ setBuildOrder(buildOrder);
 
 == Build Order Goals & Planning ==
 
-UAlbertaBot uses a heuristic search algorithm to determine build orders, which is located in the `StarcraftBuildOrderSearch` project. The details of this project are out of the scope of this wiki. However, all interaction to the algorithms in this project are handled in UAlbertaBot via the [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/StarcraftBuildOrderSearchManager.h StarcraftBuildOrderSearchManager] class, which is called from `ProductionManager.testBuildOrderSearch()`. For now, let's treat that system as a black box which when given a build order goal creates an ordered vector of `MetaType` objects similar to the example above.
+UAlbertaBot uses a heuristic search algorithm to determine build orders, which is located in the `StarcraftBuildOrderSearch` project. The details of this project are out of the scope of this wiki. However, all interaction to the algorithms in this project are handled in UAlbertaBot via the [http://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/StarcraftBuildOrderSearchManager.h StarcraftBuildOrderSearchManager] class, which is called from `ProductionManager.performBuildOrderSearch()`. For now, let's treat that system as a black box which when given a build order goal creates an ordered vector of `MetaType` objects similar to the example above.
 
 `ProductionManager` will trigger a new build order to be planned based on one of the following events occurring:
 
