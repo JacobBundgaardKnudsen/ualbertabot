@@ -19,3 +19,15 @@ enum WorkerJob {Minerals, Gas, Build, Combat, Idle, Repair, Move, Scout, Default
   * Default - Default constructor value
 
 All worker jobs are stored in a `std::map` inside `WorkerData`. You can get the status of a worker by calling `WorkerData`'s `getWorkerJob()` or `setWorkerJob()` methods.
+
+= Worker Assignment =
+
+On each frame, `WorkerManager.update()` performs the following logic:
+
+  * `WorkerManager.update()`
+    * Re-allocate workers to new mineral patches if mined out
+    * Send idle workers to gather minerals
+    * Allocate gas workers until 3 in each refinery
+    * Move build workers to building location if necessary
+
+When a worker is trained, its status is initially set to `Default`.
