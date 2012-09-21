@@ -2,7 +2,10 @@
 
 = Download =
 
-To download the bot source code, click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
+To download the bot source code, do one of the following:
+
+  * Click [Downloads] above. Download the UAlbertaBot .zip
+  * Click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
 
 = Prerequisites =
 
