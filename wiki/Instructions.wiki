@@ -5,7 +5,7 @@
 To download the bot source code, do one of the following:
 
   * Click [http://code.google.com/p/ualbertabot/downloads/list Downloads] above. Download the UAlbertaBot zip file and extract to a directory.
-  * Click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Obtaining the source code requires an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
+  * Click [https://code.google.com/p/ualbertabot/source/checkout Source] above. Check out the source code via an SVN client such as [http://tortoisesvn.net/ Tortoise SVN].
 
 = Prerequisites =
 
