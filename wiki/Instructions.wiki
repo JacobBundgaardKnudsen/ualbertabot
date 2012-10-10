@@ -43,7 +43,7 @@ To compile the bot:
 = Run =
 
 To run the bot:
-  # [http://code.google.com/p/bwapi/wiki/UsingBWAPI Install BWAPI tools and libraries]
+  # Install [http://code.google.com/p/bwapi/wiki/UsingBWAPI  BWAPI tools and libraries]
   # Run Chaoslauncher.exe (obtained from BWAPI project)
   # Modify Chaoslauncher config to point to compiled UAlbertaBot.dll
   # Run StarCraft using Chaoslauncher
