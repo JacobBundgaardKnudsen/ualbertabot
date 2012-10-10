@@ -12,7 +12,7 @@ To download the bot source code, do one of the following:
 UAlbertaBot is currently being maintained using Visual Studio 2012. Any version of Visual Studio can be used to compile the source, however the only VS Project files I will be actively maintaining are in VS 2012.
 
 List of Prerequisites for Bot:
-  * [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010 Express (required for VS2012 to get v90 support)
+  * [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010 Express (required for VS2012 to get v90 support)]
   * [http://www.microsoft.com/visualstudio/11/en-us Visual Studio 2012] (any version)
   * [http://code.google.com/p/bwapi/ BWAPI 3.7.4] (or higher)
   * [http://www.boost.org/ BOOST 1.47.0] (or higher)
