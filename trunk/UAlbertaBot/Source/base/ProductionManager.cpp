@@ -54,7 +54,7 @@ void ProductionManager::update()
 	{
 		BWAPI::Broodwar->drawTextScreen(150, 10, "Nothing left to build, new search!");
 		const std::vector< std::pair<MetaType, UnitCountType> > newGoal = StrategyManager::Instance().getBuildOrderGoal();
-		testBuildOrderSearch(newGoal);
+		performBuildOrderSearch(newGoal);
 	}
 
 	// detect if there's a build order deadlock once per second
@@ -102,7 +102,7 @@ void ProductionManager::onUnitDestroy(BWAPI::Unit * unit)
 
 		if (unit->getType() != BWAPI::UnitTypes::Zerg_Drone)
 		{
-			testBuildOrderSearch(StrategyManager::Instance().getBuildOrderGoal());
+			performBuildOrderSearch(StrategyManager::Instance().getBuildOrderGoal());
 		}
 	}
 }
@@ -436,7 +436,7 @@ void ProductionManager::onSendText(std::string text)
 	}
 	else if (text.compare("search") == 0)
 	{
-		testBuildOrderSearch(searchGoal);
+		performBuildOrderSearch(searchGoal);
 		searchGoal.clear();
 	}
 	else if (text[0] >= 'a' && text[0] <= 'z')
