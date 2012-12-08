@@ -29,6 +29,8 @@ To edit these in Windows 7 right click "My Computer" > Properties > Advanced Sys
 
 http://webdocs.cs.ualberta.ca/~cdavid/starcraftaicomp/environment.jpg
 
+NOTE: These variables CANNOT CONTAIN SPACES! (VS limitation)
+
 = Compile=
 
 To compile the bot:
