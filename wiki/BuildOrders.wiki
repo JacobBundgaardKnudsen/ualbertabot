@@ -4,12 +4,12 @@
 
 All unit production in UAlbertaBot is handled by [https://code.google.com/p/ualbertabot/source/browse/trunk/UAlbertaBot/Source/base/ProductionManager.h ProductionManager]. 
 
-`ProductionManager.cpp''s constructor sets an initial build order as follows:
+`ProductionManager.cpp`'s constructor sets an initial build order as follows:
 
   * initially set build order to 'opening book' build order from strategy manager
-    * these build orders are represented by a series of integers corresponding to unit types, which can be found in `StarcraftData.hpp'
+    * these build orders are represented by a series of integers corresponding to unit types, which can be found in `StarcraftData.hpp`
     * these opening book build orders will occur in entirety until an event happens which triggers a new build order to be searched
-Here is the control flow for `ProductionManager.update()' which is called every frame:
+Here is the control flow for `ProductionManager.update()` which is called every frame:
 
   * if event occurs which triggers a new build order (worker dies, building dies, or we run out of things to build in the current build order)
     * clear current build order
