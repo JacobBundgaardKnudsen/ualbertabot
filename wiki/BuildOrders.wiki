@@ -113,3 +113,8 @@ If you wish to alter the build order goal strategy of UAlbertaBot, you simply ne
 {{{
 void ProductionManager::testBuildOrderSearch(const std::vector< std::pair<MetaType, UnitCountType> > & goal)
 }}} 
+
+
+== Overriding Build Order Search ==
+
+As mentioned above, by default UAlbertaBot uses a heuristic search algorithm to determine build orders from a goal vector of units. This system can be overridden (useful for Zerg since it doesn't work for them very well) by simply constructing your own build orders and putting them into `ProductionManager`'s `BuildOrderQueue` object named `queue`.
