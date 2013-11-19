@@ -117,4 +117,4 @@ void ProductionManager::testBuildOrderSearch(const std::vector< std::pair<MetaTy
 
 == Overriding Build Order Search ==
 
-As mentioned above, by default UAlbertaBot uses a heuristic search algorithm to determine build orders from a goal vector of units. This system can be overridden (useful for Zerg since it doesn't work for them very well) by simply constructing your own build orders and putting them into `ProductionManager`'s `BuildOrderQueue` object named `queue`.
+As mentioned above, by default UAlbertaBot uses a heuristic search algorithm to determine build orders from a goal vector of units. This system can be overridden (useful for Zerg since it doesn't work for them very well) by simply constructing your own build orders and putting them into `ProductionManager`'s `BuildOrderQueue` object named `queue`. Simply remove any code inside `ProductionManager` which calls the function `performBuildOrderSearch()` which sets the build order based on the search algorithm and replace this with your own custom build order code. You can add these to the queue manually, or use the technique above in Example Build Order
