@@ -14,7 +14,7 @@ UAlbertaBot is currently being maintained using Visual Studio 2012. Any version 
 List of Prerequisites for Bot:
   * [http://www.microsoft.com/visualstudio/eng/downloads Visual Studio 2010] OR [http://www.microsoft.com/en-us/download/details.aspx?id=8279 Windows SDK v7.1] (required for VS2012 to get v90 support)
   * [http://www.microsoft.com/visualstudio/11/en-us Visual Studio 2012] (any version)
-  * [http://code.google.com/p/bwapi/ BWAPI 3.7.4] (or higher)
+  * [http://code.google.com/p/bwapi/ BWAPI 3.7.4]
   * [http://www.boost.org/ BOOST 1.47.0] (or higher)
 
 The UAlbertaBot project files use Windows Environment Variables to point to their required libraries.
